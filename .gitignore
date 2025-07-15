@@ -101,3 +101,5 @@ dmypy.json
 
 # macOS
 .DS_Store
+
+**/__pycache__/
