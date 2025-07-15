@@ -17,3 +17,7 @@ async def websocket_endpoint(websocket: WebSocket):
     while True:
         data = await websocket.receive_text()
         await websocket.send_text(f"あなたのメッセージ: {data}")
+        
+@app.get("/ping")
+async def ping():
+    return {"message": "pong"}
